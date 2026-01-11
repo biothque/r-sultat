@@ -1,0 +1,19 @@
+#section-header header {
+    background-color: var(--vert-agricole);
+    color: var(--blanc);
+    display: flex;
+    align-items: center;
+    padding: 15px 5%;
+    border-bottom: 3px solid var(--vert-sombre);
+}
+
+.header-logo {
+    height: 70px;
+    margin-right: 20px;
+}
+
+.header-titre h1 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 0;
+}
