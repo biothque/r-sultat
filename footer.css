@@ -1,0 +1,36 @@
+#section-footer footer {
+    background-color: var(--vert-agricole);
+    color: var(--blanc);
+    padding: 30px 5%;
+    text-align: center;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.footer-socials a {
+    color: var(--blanc);
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 5px;
+}
+
+.footer-socials a:hover {
+    background-color: var(--vert-sombre);
+}
+
+.tricolore-bar {
+    height: 10px;
+    display: flex;
+    margin-top: 30px;
+}
+/* On garde l'idée de la barre en bas de l'image (Bleu/Jaune/Rouge ou aux couleurs de votre choix) */
+.bar-1 { background: #00acee; flex: 1; }
+.bar-2 { background: #feca22; flex: 1; }
+.bar-3 { background: #de2110; flex: 1; }
