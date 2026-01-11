@@ -1,0 +1,19 @@
+#section-hero .hero-banner {
+    position: relative;
+    height: 250px;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('votre-image-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--blanc);
+    padding-right: 10%;
+}
+
+.hero-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: right;
+    max-width: 400px;
+}
