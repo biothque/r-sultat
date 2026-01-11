@@ -2,18 +2,36 @@
     background-color: var(--vert-agricole);
     color: var(--blanc);
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    padding: 15px 5%;
-    border-bottom: 3px solid var(--vert-sombre);
+    padding: 1rem 5%;
+    min-height: 80px;
 }
 
 .header-logo {
-    height: 70px;
+    height: 60px;
     margin-right: 20px;
 }
 
 .header-titre h1 {
-    font-size: 1.2rem;
-    text-transform: uppercase;
+    font-size: 1.1rem;
     margin: 0;
+    line-height: 1.2;
+}
+
+/* Version Mobile */
+@media (max-width: 600px) {
+    #section-header header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem 10px;
+    }
+    .header-logo {
+        margin-right: 0;
+        margin-bottom: 15px;
+        height: 50px;
+    }
+    .header-titre h1 {
+        font-size: 1rem;
+    }
 }
