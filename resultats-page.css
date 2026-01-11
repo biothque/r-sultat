@@ -1,0 +1,105 @@
+/* css/resultats-page.css */
+
+.result-container {
+    padding: 20px 5%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title-green {
+    color: var(--vert-agricole);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+/* --- BOUTON PDF --- */
+.btn-pdf {
+    background-color: #e74c3c; /* Rouge pour rappeler le format PDF */
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-pdf:hover {
+    background-color: #c0392b;
+}
+
+/* --- TABLEAU DES RÉSULTATS --- */
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    overflow: hidden; /* Pour que les coins arrondis fonctionnent */
+    margin-bottom: 30px;
+}
+
+.result-table td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #f0f0f0;
+    text-align: left;
+}
+
+/* Colonne de gauche (Les noms des champs) */
+.label-col {
+    background-color: var(--vert-agricole);
+    color: white;
+    font-weight: bold;
+    width: 40%;
+    font-size: 0.9rem;
+}
+
+/* Colonne de droite (Les valeurs) */
+.value-col {
+    font-weight: 600;
+    color: #2c3e50;
+    background-color: #fafafa;
+}
+
+/* --- BOUTON RETOUR --- */
+.btn-back {
+    background: transparent;
+    color: #777;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.btn-back:hover {
+    background: #f0f0f0;
+}
+
+/* --- RESPONSIVE (MOBILE) --- */
+@media (max-width: 600px) {
+    .result-table td {
+        display: block; /* On empile les colonnes sur petit écran */
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .label-col {
+        background-color: #f8f8f8;
+        color: var(--vert-agricole);
+        border-bottom: none;
+        padding-bottom: 5px;
+    }
+    
+    .value-col {
+        padding-top: 5px;
+        font-size: 1.1rem;
+        border-bottom: 2px solid var(--vert-agricole);
+    }
+}
