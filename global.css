@@ -1,0 +1,16 @@
+:root {
+    --vert-agricole: #228B22; /* ForestGreen */
+    --vert-sombre: #1a6b1a;
+    --blanc: #ffffff;
+    --gris-clair: #f4f4f4;
+    --noir: #333333;
+    --bouton-recherche: #2ecc71; /* Vert plus vif pour l'action */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--noir);
+    background-color: var(--gris-clair);
+}
