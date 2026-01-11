@@ -1,33 +1,41 @@
 #section-search {
     background-color: var(--blanc);
-    padding: 40px 20px;
-    text-align: center;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
 }
 
 .form-container {
-    max-width: 500px;
-    margin: 0 auto;
+    width: 90%; /* Prend presque toute la largeur sur mobile */
+    max-width: 450px; /* Limité sur grand écran */
+    text-align: center;
 }
 
 .input-field {
     width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 8px; /* Comme sur la photo */
+    padding: 15px;
+    margin: 12px 0;
+    border: 1.5px solid #ddd;
+    border-radius: 10px;
     font-size: 1rem;
+    box-sizing: border-box; /* Très important pour le responsive */
 }
 
 .btn-search {
+    width: 100%; /* Bouton large sur mobile pour le pouce */
     background-color: var(--bouton-recherche);
     color: white;
+    padding: 15px;
     border: none;
-    padding: 12px 30px;
-    border-radius: 8px;
+    border-radius: 10px;
+    font-size: 1.1rem;
     cursor: pointer;
     font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px auto;
+}
+
+@media (min-width: 768px) {
+    .btn-search {
+        width: auto; /* Bouton taille normale sur PC */
+        padding: 15px 40px;
+    }
 }
